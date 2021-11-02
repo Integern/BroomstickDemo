@@ -14,6 +14,10 @@
     letting gravity come into play. Turning too sharply will result in a reduction in speed.
 
 
+    An uploaded version of the experience can be found here: https://www.roblox.com/games/7872505713/Broomstick-Demo. Due to how Roblox handles animations (uploading
+    and ownership), you may only be able to see the implementation of the animations in the experience uploaded to my profile.
+
+
 
 
     PROJECT STRUCTURE
@@ -26,7 +30,8 @@
         Client -> game.StarterPlayer.StarterPlayerScripts.Aero
         Shared -> game.ReplicatedStorage.Aero.Shared
 
-        Code can also be found on my github:
+        Code can also be found on my github.
+        [ Github: https://github.com/Integern/BroomstickDemo/tree/master/src ]
 
     -game.World is where most parts are stored; any parts in here can collide with the broomstick and will cause in ejection.
 
@@ -37,7 +42,7 @@
         Broomstick models are not mine, and were found in the Roblox Studio Toolbox.
         The WindSound is not mine, and was found on a royalty-free website.
 
-    -I made use of Object Orientated Programming by the use of metatables. You can find the BaseInstance class in Shared.Classes.BaseInstance,
+    -I made use of Object Orientated Programming via the use of metatables. You can find the BaseInstance class in Shared.Classes.BaseInstance,
         every class inherits from this as it has useful methods (including inheritance, as well as adding/firing/connecting custom events)
 
 
@@ -51,7 +56,7 @@
     - Broomstick (re)spawning, mounting, flying and ejection
     - Collision detection
     - OOP; useful for easily creating/destroying broomsticks
-    - Custom animation loader/player
+    - Custom animation loading/playing
     - Custom assets module, converting roblox heirachy to a table
     - Raycasting
 
@@ -64,9 +69,9 @@
 
     - Server spawns BroomstickStand(s), which has a broomstick model attached. 
     - When a player sits on a seat on a broomstick model, it assigns the player to that broomstick. We inform their client of this.
-    - We give player control of the broomstick on their client; by giving different inputs (moving direction and looking ddirection and keybinds),
+    - We give player control of the broomstick on their client. By giving different inputs (moving direction and looking ddirection and keybinds),
         we can cause the broomstick to move in the way we want.
-    - Fly the broomstick around the map, dodging and weaving between obstacles, accelerating up and diving down for increased speed.
+    - Fly the broomstick around the map, dodging and weaving between obstacles, accelerating forward and diving down for increased speed.
     - There is varying acceleration based on your current speed (drag calculations), how tight you turn, tilt angle (gravity)
     - If you crash, or press the ejection keybind, you fall off the broomstick into a ragdoll then respawn at the broomsticks.
 
