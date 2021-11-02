@@ -1,0 +1,66 @@
+{
+  "name": "code",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Aero": {
+        "$className": "Folder",
+        "$ignoreUnknownInstances": true,
+        "Shared": {
+          "$path": "src/shared",
+          "$ignoreUnknownInstances": true
+        }
+      }
+    },
+    "ServerStorage": {
+      "$className": "ServerStorage",
+      "Aero": {
+        "$className": "Folder",
+        "$ignoreUnknownInstances": true,
+        "Services": {
+          "$path": "src/server/services",
+          "$ignoreUnknownInstances": true
+        },
+        "Modules": {
+          "$path": "src/server/modules",
+          "$ignoreUnknownInstances": true
+        }
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$ignoreUnknownInstances": true,
+        "Aero": {
+          "$className": "Folder",
+          "$ignoreUnknownInstances": true,
+          "Controllers": {
+            "$path": "src/client/controllers",
+            "$ignoreUnknownInstances": true
+          },
+          "Modules": {
+            "$path": "src/client/modules",
+            "$ignoreUnknownInstances": true
+          }
+        }
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$properties": {
+        "FilteringEnabled": true
+      },
+      "README": {
+        "$path": "src/README.lua"
+      }
+    },
+    "SoundService": {
+      "$className": "SoundService",
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    }
+  }
+}
